@@ -37,14 +37,24 @@
         line-height: 120% !important;
       }
 
-      .mobile-content-left-full-width,
-      .mobile-content-right-full-width {
+      .adaptive-img {
+        width: 100%!important;
+        height: auto!important;
+      }
+      .mobile-block-full-width {
         width: 100% !important;
       }
       .mobile-content-full-width {
-        width: 100% !important;
-        max-width: 600px !important;
+        width: 100%!important;
+        max-width: 568px!important;
       }
+      .mobile-content-p0 {
+        padding: 0!important;
+      }
+      .mobile-content-hidden {
+        display: none!important;
+      }
+      /*header*/
       .header__wrapper {
         width: 100%!important;
         max-width: 100%!important;
@@ -55,9 +65,25 @@
       }
       .header_mobile-padding {
         padding-top: 24px!important;
-        padding-right: 40px!important;
+        padding-right: 0px!important;
         padding-bottom: 24px!important;
-        padding-left: 40px!important;
+        padding-left: 0px!important;
+      }
+      /*курсы*/
+      .courses__title {
+        padding-bottom: 54px!important;
+      }
+      .courses__item {
+        float: none!important;
+        padding-bottom: 32px!important;
+      }
+      /*популярные курсы*/
+      .popular-courses__title {
+        padding-bottom: 24px!important;
+      }
+      .popular-courses__item {
+        float: none!important;
+        padding-bottom: 40px!important;
       }
     }
 
@@ -78,9 +104,9 @@
       <v:fill type="tile" color="#F6F6F6"></v:fill>
     </v:background>
     <![endif]-->
-    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6">
       <tr>
-        <td align="center">
+        <td align="center" style="padding-right: 16px; padding-left: 16px;">
           <!-- header -->
           <table width="100%" cellspacing="0" cellpadding="0" border="0">
             <tr>
@@ -165,7 +191,7 @@
           </table>
 
           <!-- центровщик -->
-          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="600px"
+          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="568px"
                  style="background-color: #FFFFFF; border-radius: 15px;"
                  class="mobile-content-full-width"
           >
@@ -248,8 +274,10 @@
                 <!-- курсы -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center" style="padding-bottom: 52px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Курсы, участвующие в&nbsp;акции</b></h2>
+                    <td align="center" style="padding-bottom: 24px;"
+                        class="courses__title"
+                    >
+                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414; text-align: center"><b>Курсы, участвующие в&nbsp;акции</b></h2>
                     </td>
                   </tr>
                   <tr>
@@ -258,7 +286,9 @@
                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                         <!-- 1 строка -->
                         <tr>
-                          <td align="left">
+                          <td align="center" style="padding-right: 36px; padding-left: 36px;"
+                              class="mobile-content-p0"
+                          >
                             <!-- html/css -->
                             <!--[if mso]>
                             <table style="width:600px;" cellpadding="0" cellspacing="0">
@@ -266,7 +296,9 @@
                             <td valign="top" style="width:213px;">
                             <![endif]-->
                             <table width="213px" cellspacing="0" cellpadding="0" border="0"
-                                   style="float: left; padding-bottom: 32px;">
+                                   style="float: left; padding-bottom: 40px;"
+                                   class="courses__item"
+                            >
                               <tr>
                                 <td align="center" style="padding-top: 14px; padding-bottom: 32px;">
                                   <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-htmlCss.jpg" width="122" height="75" border="0" alt="HTML и CSS" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
@@ -320,7 +352,9 @@
                             <td valign="top" style="width:213px;">
                             <![endif]-->
                             <table width="213px" cellspacing="0" cellpadding="0" border="0"
-                                   style="float: left; padding-bottom: 32px;">
+                                   style="float: right; padding-bottom: 40px;"
+                                   class="courses__item"
+                            >
                               <tr>
                                 <td align="center" style="padding-top: 5px; padding-bottom: 16px;">
                                   <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-sass.jpg" width="100" height="100" border="0" alt="Sass" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
@@ -374,7 +408,9 @@
                         </tr>
                         <!-- 2 строка -->
                         <tr>
-                          <td>
+                          <td align="center" style="padding-right: 35px; padding-left: 30px;"
+                              class="mobile-content-p0"
+                          >
                             <!-- ps -->
                             <!--[if mso]>
                             <table style="width:600px;" cellpadding="0" cellspacing="0">
@@ -382,15 +418,17 @@
                             <td valign="top" style="width:213px;">
                             <![endif]-->
                             <table width="227px" cellspacing="0" cellpadding="0" border="0"
-                                   style="float: left; padding-bottom: 32px;">
+                                   style="float: left; padding-bottom: 48px;"
+                                   class="courses__item"
+                            >
                               <tr>
                                 <td align="center" style="padding-bottom: 10px;">
                                   <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-photoshop.jpg" width="110" height="110" border="0" alt="Photoshop" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                                 </td>
                               </tr>
                               <tr>
-                                <td align="center">
-                                  <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #000000;"><b>Photoshop для верстальщика</b></p>
+                                <td align="center" style="padding-bottom: 18px;">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #000000;"><b>Photoshop для верстальщика</b></p>
                                 </td>
                               </tr>
                               <tr>
@@ -438,15 +476,17 @@
                             <td valign="top" style="width:213px;">
                             <![endif]-->
                             <table width="213px" cellspacing="0" cellpadding="0" border="0"
-                                   style="float: left; padding-bottom: 32px;">
+                                   style="float: right; padding-bottom: 48px;"
+                                   class="courses__item"
+                            >
                               <tr>
                                 <td align="center" style="padding-top: 10px; padding-bottom: 28px;">
                                   <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-JS.jpg" width="74" height="83" border="0" alt="JavaScript" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                                 </td>
                               </tr>
                               <tr>
-                                <td align="center">
-                                  <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #000000;"><b>JS&nbsp;начальный</b></p>
+                                <td align="center" style="padding-bottom: 18px;">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #000000;"><b>JS&nbsp;начальный</b></p>
                                 </td>
                               </tr>
                               <tr>
@@ -506,7 +546,7 @@
           </table>
 
           <!-- центровщик -->
-          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="600px"
+          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="568px"
                  style="background-color: #FFFFFF; border-radius: 15px;"
                  class="mobile-content-full-width"
           >
@@ -600,7 +640,7 @@
           </table>
 
           <!-- центровщик -->
-          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="600px"
+          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="568px"
                  style="background-color: #FFFFFF; border-radius: 15px;"
                  class="mobile-content-full-width"
           >
@@ -609,19 +649,25 @@
                 <!-- популярные курсы -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center" style="padding-bottom: 24px;">
+                    <td align="center" style="padding-bottom: 48px;"
+                        class="popular-courses__title"
+                    >
                       <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Популярные курсы</b></h2>
                     </td>
                   </tr>
                   <tr>
-                    <td align="center">
+                    <td align="center" style="padding-right: 18px; padding-left: 24px;"
+                        class="mobile-content-p0"
+                    >
                       <!--[if mso]>
                       <table style="width:600px;" cellpadding="0" cellspacing="0">
                       <tr>
                       <td valign="top" style="width:152px;">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0" width="152px"
-                             style="float: left; padding-bottom: 40px;">
+                             style="float: left; padding-bottom: 16px;"
+                             class="popular-courses__item"
+                      >
                         <tr>
                           <td align="center" style="padding-bottom: 16px;">
                             <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-cyber-security.png" width="48" height="56" border="0" alt="Специалист по кибербезопасности" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
@@ -650,10 +696,23 @@
                       </table>
                       <!--[if mso]>
                       </td>
+                      <td valign="top" style="width:0;">
+                      <![endif]-->
+                      <!-- распорка в десктоп -->
+                      <table cellspacing="0" cellpadding="0" border="0" width="32px"
+                             style="float: left;"
+                             class="mobile-content-hidden"
+                      >
+                        <tr><td>&nbsp</td></tr>
+                      </table>
+                      <!--[if mso]>
+                      </td>
                       <td valign="top" style="width:152px;">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0" width="152px"
-                             style="float: left; padding-bottom: 40px;">
+                             style="float: left; padding-bottom: 16px;"
+                             class="popular-courses__item"
+                      >
                         <tr>
                           <td align="center" style="padding-bottom: 16px;">
                             <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-data-scientist.png" width="48" height="56" border="0" alt="анализ данных" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
@@ -684,8 +743,10 @@
                       </td>
                       <td valign="top" style="width:168px;">
                       <![endif]-->
-                      <table cellspacing="0" cellpadding="0" border="0" width="168px"
-                             style="float: left; padding-bottom: 40px;">
+                      <table cellspacing="0" cellpadding="0" border="0" width="164px"
+                             style="float: right; padding-bottom: 16px;"
+                             class="popular-courses__item"
+                      >
                         <tr>
                           <td align="center" style="padding-bottom: 16px;">
                             <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-game-development.png" width="48" height="56" border="0" alt="разработчик игр" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
@@ -725,7 +786,10 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
                     <td align="center">
-                      <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/second-picture.jpg" width="288" height="288" border="0" alt="пригласительная картинка курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                      <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/second-picture.jpg" width="300" height="300" border="0" alt="пригласительная картинка курса"
+                           style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"
+                           class="adaptive-img"
+                      />
                     </td>
                   </tr>
                   <tr>
@@ -807,7 +871,7 @@
           </table>
 
           <!-- центровщик -->
-          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="600px"
+          <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" width="568px"
                  style="background-color: #FFFFFF; border-top-left-radius: 15px; border-top-right-radius: 15px;"
                  class="mobile-content-full-width"
           >
