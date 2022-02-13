@@ -45,6 +45,9 @@
         width: 100%!important;
         max-width: 600px!important;
       }
+      .mobile-content-hidden {
+        display: none!important;
+      }
       .button {
         display: block!important;
       }
@@ -62,6 +65,13 @@
       }
       .webinar-host__table-button {
         width: 206px!important;
+      }
+      /*footer*/
+      .footer__social {
+        padding-left: 8px;
+      }
+      .footer__link {
+        padding-left: 8px;
       }
     }
     /* default */
@@ -401,10 +411,14 @@
                       <tr>
                       <td valign="top" style="width:288px">
                       <![endif]-->
-                      <table width="288px" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;">
+                      <table width="209px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="left" style="padding-right: 2px; padding-bottom: 32px; padding-left: 8px;">
+                          <td align="left" style="padding-bottom: 32px; padding-left: 16px;"
+                              class="footer__social"
+                          >
                             <table>
                               <tr>
                                 <td  align="left" style="padding-bottom: 18px">
@@ -468,11 +482,20 @@
                       <td style="width:0px"></td>
                       <td valign="top" style="width:288px">
                       <![endif]-->
+                      <!-- распорка -->
+                      <table width="85px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-hidden"
+                      >
+                        <tr><td style="padding-right: 90px;">&nbsp</td></tr>
+                      </table>
                       <!-- menu -->
-                      <table width="288px" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;">
+                      <table width="150px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="left" style="padding-right: 2px; padding-bottom: 19px; padding-left: 8px;">
+                          <td align="left" style="padding-bottom: 19px;" class="footer__link">
                             <table>
                               <tr>
                                 <td align="left" style="padding-bottom: 18px;">
