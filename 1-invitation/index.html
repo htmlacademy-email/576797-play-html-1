@@ -45,6 +45,9 @@
         width: 100%!important;
         max-width: 600px!important;
       }
+      .mobile-content-hidden {
+        display: none!important;
+      }
       .button {
         display: block!important;
       }
@@ -63,6 +66,19 @@
       .webinar-host__table-button {
         width: 206px!important;
       }
+      /*footer*/
+      .footer__social {
+        padding-left: 8px!important;
+      }
+      .footer__link {
+        padding-left: 8px!important;
+      }
+     /*info*/
+     .info__padding {
+        padding-top: 48px!important;
+       padding-left: 0!important;
+       padding-right: 0!important;
+     }
     }
     /* default */
     #outlook a {
@@ -401,10 +417,14 @@
                       <tr>
                       <td valign="top" style="width:288px">
                       <![endif]-->
-                      <table width="288px" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;">
+                      <table width="209px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="left" style="padding-right: 2px; padding-bottom: 32px; padding-left: 8px;">
+                          <td align="left" style="padding-bottom: 32px; padding-left: 16px;"
+                              class="footer__social"
+                          >
                             <table>
                               <tr>
                                 <td  align="left" style="padding-bottom: 18px">
@@ -468,11 +488,20 @@
                       <td style="width:0px"></td>
                       <td valign="top" style="width:288px">
                       <![endif]-->
+                      <!-- распорка -->
+                      <table width="85px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-hidden"
+                      >
+                        <tr><td style="padding-right: 90px;">&nbsp</td></tr>
+                      </table>
                       <!-- menu -->
-                      <table width="288px" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;">
+                      <table width="150px" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="left" style="padding-right: 2px; padding-bottom: 19px; padding-left: 8px;">
+                          <td align="left" style="padding-bottom: 19px;" class="footer__link">
                             <table>
                               <tr>
                                 <td align="left" style="padding-bottom: 18px;">
@@ -534,19 +563,27 @@
           <!-- info -->
           <table width="100%" cellspacing="0" cellpadding="0" border="0">
             <tr>
-              <td align="center" style="padding-top: 56px; padding-right: 16px; padding-bottom: 32px; padding-left: 16px;">
+              <td align="center">
                 <!-- центровщик -->
                 <table width="600px" cellspacing="0" cellpadding="0" border="0" class="mobile-content-full-width">
                   <tr>
-                    <td align="left" style="padding-bottom: 13px;">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 11px; line-height: 13px; color: #828282;">Вы&nbsp;получили это письмо, так как являетесь пользователем портала HTMLPlay. Рассылка производится в&nbsp;соответствии с&nbsp;пользовательским соглашением. Если вы&nbsp;не&nbsp;хотите получать рассылку, вы&nbsp;можете <a
-                          href="" target="_blank" style="color: #828282; text-decoration: underline;">отписаться</a> или <a href="" target="_blank" style="color: #828282; text-decoration: underline;">настроить параметры.</a>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="left">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 11px; line-height: 13px; color: #828282;">Если письмо отображается некорректно или вы&nbsp;хотите им&nbsp;поделиться, <a href="" target="_blank" style="color: #828282; text-decoration: underline;">жмите сюда.</a></p>
+                    <td style="padding-top: 56px; padding-right: 16px; padding-bottom: 32px; padding-left: 16px;"
+                        class="info__padding"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td align="left" style="padding-bottom: 13px;">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 11px; line-height: 13px; color: #828282;">Вы&nbsp;получили это письмо, так как являетесь пользователем портала HTMLPlay. Рассылка производится в&nbsp;соответствии с&nbsp;пользовательским соглашением. Если вы&nbsp;не&nbsp;хотите получать рассылку, вы&nbsp;можете <a
+                              href="" target="_blank" style="color: #828282; text-decoration: underline;">отписаться</a> или <a href="" target="_blank" style="color: #828282; text-decoration: underline;">настроить параметры.</a>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 11px; line-height: 13px; color: #828282;">Если письмо отображается некорректно или вы&nbsp;хотите им&nbsp;поделиться, <a href="" target="_blank" style="color: #828282; text-decoration: underline;">жмите сюда.</a></p>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
