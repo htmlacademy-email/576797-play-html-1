@@ -51,13 +51,39 @@
       .button {
         display: block!important;
       }
+      .adaptive-img {
+        width: 100%!important;
+        height: auto!important;
+      }
 
       .web-view {
         padding-bottom: 22px!important;
       }
+      /*header*/
       .header__logo {
         padding-top: 26px!important;
       }
+      .header__desc {
+        padding-bottom: 16px!important;
+      }
+      /*на вебинар*/
+      .webinar__wrapper {
+        padding-right: 16px!important;
+        padding-bottom: 0!important;
+        padding-left: 16px!important;
+      }
+      /*план вебинара / синий блок*/
+      .blue-block__wrapper {
+        padding-top: 24px!important;
+        padding-bottom: 24px!important;
+      }
+      .blue-block__desc {
+        padding-bottom: 24px!important;
+      }
+      .blue-block__item {
+        padding-top: 16px!important;
+      }
+      /*ведущий вебинара*/
       .webinar-host__name {
         padding-right: 16px!important;
         padding-bottom: 16px!important;
@@ -65,6 +91,11 @@
       }
       .webinar-host__table-button {
         width: 206px!important;
+      }
+      /*розыгрыш призов*/
+      .prize__image {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
       }
       /*footer*/
       .footer__social {
@@ -103,8 +134,8 @@
         <td>
 
           <!-- центровщик -->
-          <table width="600px" cellspacing="0" cellpadding="0" border="0" align="center" class="mobile-content-full-width"
-                 style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; background-color:#F6F6F6; width:600px;">
+          <table width="568px" cellspacing="0" cellpadding="0" border="0" align="center" class="mobile-content-full-width"
+                 style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; background-color:#F6F6F6; width:568px;">
             <tr>
               <td>
                 <!-- web-view -->
@@ -120,8 +151,8 @@
           </table>
 
           <!-- центровщик -->
-          <table width="600px" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" class="mobile-content-full-width"
-                 style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; width: 600px;">
+          <table width="568px" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" class="mobile-content-full-width"
+                 style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; width: 568px;">
             <tr>
               <td>
                 <!-- header -->
@@ -133,12 +164,12 @@
                   </tr>
                   <tr>
                     <td align="center" style="padding-bottom: 16px;">
-                      <h1 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 28px; line-height: 33px; color:#0B379B;"><b>Хотите научиться<br/>web-разработке?</b></h1>
+                      <h1 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 36px; line-height: 42px; color:#0B379B;"><b>Хотите научиться<br/>web-разработке?</b></h1>
                     </td>
                   </tr>
                   <tr>
-                    <td align="center" style="padding-bottom: 16px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color:#FF4B33;"><b>Приглашаем Вас на&nbsp;бесплатный вебинар &laquo;Тренды <span style="white-space: nowrap;">Frontend-разработки</span><br/>2020&raquo;</b></h2>
+                    <td align="center" style="padding-bottom: 24px;" class="header__desc">
+                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color:#FF4B33;"><b>Приглашаем Вас на&nbsp;бесплатный вебинар &laquo;Тренды <span style="white-space: nowrap;">Frontend-разработки</span><br/>2020&raquo;</b></h2>
                     </td>
                   </tr>
                 </table>
@@ -146,16 +177,18 @@
                 <!-- на вебинар -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td>
+                    <td style="padding-bottom: 32px; padding-left: 8px;" class="webinar__wrapper">
                       <!--[if mso]>
                       <table cellspacing="0" cellpadding="0" border="0" style="width:600px">
                       <tr>
                       <td valign="top" style="width:256px" >
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0" align="left" bgcolor="#FF4B33"
-                      style="float: left; background-color: #FF4B33; border-radius: 5px;">
+                             style="float: left; background-color: #FF4B33; border-radius: 5px;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="center" style="width: 256px; padding-top: 16px; padding-bottom: 25px">
+                          <td align="center" style="width: 200px; padding-top: 16px; padding-bottom: 25px">
                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
                               <tr>
                                 <td align="center">
@@ -191,10 +224,10 @@
                       <td valign="top" style="width:256px">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0" align="right"
-                             style="float: right">
+                             style="float: right" class="mobile-content-full-width">
                         <tr>
-                          <td style="width: 256px; height: 234px;">
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/1-invitation/img/first-picture.png" width="256" height="234" border="0" alt="Тренды frontend-разработки" style="display:block; width:100%; max-width: 256px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                          <td align="center">
+                            <img class="adaptive-img" src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/1-invitation/img/first-picture.png" width="352" height="286" border="0" alt="Тренды frontend-разработки" style="display:block; width:100%; max-width: 352px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                           </td>
                         </tr>
                       </table>
@@ -206,16 +239,17 @@
                     </td>
                   </tr>
                 </table>
-                <br/>
                 <!-- план вебинара / синий блок -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#0B379B"
                        style="width: 100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; background-color: #0B379B;">
                   <tr>
-                    <td align="left" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
+                    <td align="left" style="padding-top: 40px; padding-right: 16px; padding-bottom: 40px; padding-left: 16px;"
+                        class="blue-block__wrapper"
+                    >
                       <table width="100%" cellspacing="0" cellpadding="0" border="0"
                              style="width: 100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;">
                         <tr>
-                          <td align="left" style="padding-bottom: 24px;">
+                          <td align="left" style="padding-bottom: 32px;" class="blue-block__desc">
                             <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #FFFFFF;">Мы&nbsp;расскажем все детали о&nbsp;том, с&nbsp;чего начать свой путь в&nbsp;разработке сайтов, и&nbsp;как вырасти в&nbsp;востребованного специалиста. Все вопросы&nbsp;Вы сможете задать спикеру на&nbsp;вебинаре :)</p>
                           </td>
                         </tr>
@@ -243,6 +277,13 @@
                             </td>
                             <td valign="top">
                             <![endif]-->
+                            <!-- распорка -->
+                            <table cellspacing="0" cellpadding="0" border="0" width="13px"
+                                   style="float: left;"
+                                   class=""
+                            >
+                              <tr><td>&nbsp</td></tr>
+                            </table>
                             <table cellpadding="0" cellspacing="0" align="left"
                                    style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float:left;">
                               <tr>
@@ -259,7 +300,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td align="left" style="padding-top: 16px">
+                          <td align="left" style="padding-top: 8px" class="blue-block__item">
                             <!--[if mso]>
                             <table cellpadding="0" cellspacing="0" border="0" style="width:600px">
                               <tr>
@@ -277,6 +318,13 @@
                             </td>
                             <td valign="top">
                             <![endif]-->
+                            <!-- распорка -->
+                            <table cellspacing="0" cellpadding="0" border="0" width="13px"
+                                   style="float: left;"
+                                   class=""
+                            >
+                              <tr><td>&nbsp</td></tr>
+                            </table>
                             <table cellpadding="0" cellspacing="0" align="left"
                                    style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float:left;">
                               <tr>
@@ -293,7 +341,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td align="left" style="padding-top: 16px">
+                          <td align="left" style="padding-top: 8px" class="blue-block__item">
                             <!--[if mso]>
                             <table cellpadding="0" cellspacing="0" border="0" style="width:600px">
                               <tr>
@@ -311,6 +359,13 @@
                             </td>
                             <td valign="top">
                             <![endif]-->
+                            <!-- распорка -->
+                            <table cellspacing="0" cellpadding="0" border="0" width="13px"
+                                   style="float: left;"
+                                   class=""
+                            >
+                              <tr><td>&nbsp</td></tr>
+                            </table>
                             <table cellpadding="0" cellspacing="0" align="left"
                                    style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float:left;">
                               <tr>
@@ -375,13 +430,15 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0"
                        style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px">
                   <tr>
-                    <td align="center">
-                      <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/1-invitation/img/second-picture.jpg" width="254" height="286" border="0" alt="пригласительная картинка вебинара" style="display:block; width:100%; max-width: 254px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                    <td align="center" style="padding-top: 16px; padding-bottom: 16px;"
+                        class="prize__image"
+                    >
+                      <img class="adaptive-img" src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/1-invitation/img/second-picture.jpg" width="278" height="278" border="0" alt="пригласительная картинка вебинара" style="display:block; width:100%; max-width: 278px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                     </td>
                   </tr>
                   <tr>
                     <td align="center" style="padding-bottom: 24px;">
-                      <h4 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #13D6C3;"><b>Среди участников вебинара будут<br/>разыграны ценные призы!</b></h4>
+                      <h4 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 30px; line-height: 35px; color: #13D6C3;"><b>Среди участников вебинара будут<br/>разыграны ценные призы!</b></h4>
                     </td>
                   </tr>
                   <tr>
