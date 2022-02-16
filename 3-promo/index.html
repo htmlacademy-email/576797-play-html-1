@@ -69,6 +69,13 @@
         padding-bottom: 24px!important;
         padding-left: 0px!important;
       }
+      /*акция*/
+      .action-block__image {
+        height: 284px!important;
+      }
+      .action-block__padding {
+        padding-top: 16px!important;
+      }
       /*курсы*/
       .courses__title {
         padding-bottom: 54px!important;
@@ -77,12 +84,29 @@
         float: none!important;
         padding-bottom: 32px!important;
       }
+      /*отзыв о курсе*/
+      .review {
+        padding-right: 16px!important;
+        padding-bottom: 32px!important;
+        padding-left: 16px!important;
+      }
+      .review__button {
+        padding-top: 24px!important;
+      }
       /*популярные курсы*/
       .popular-courses__title {
         padding-bottom: 24px!important;
       }
       .popular-courses__item {
         float: none!important;
+        padding-bottom: 40px!important;
+      }
+      /*преимущества*/
+      .advantage__wrapper {
+        padding-top: 56px!important;
+        padding-bottom: 32px!important;
+      }
+      .advantage__title {
         padding-bottom: 40px!important;
       }
       /*footer*/
@@ -222,7 +246,9 @@
                       <td valign="top" style="width:288px;">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0" bgcolor="#FF4B33"
-                             style="float: left; width: 288px; background-color: #FF4B33; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                             style="float: left; width: 284px; background-color: #FF4B33; border-top-left-radius: 5px; border-top-right-radius: 5px;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
                           <td align="center" style="padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px;">
                             <table cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -263,10 +289,12 @@
                       <td valign="top" style="width:284px;">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0"
-                             style="float: left; width: 284px">
+                             style="float: right; width: 284px; height: 271px;"
+                             class="mobile-content-full-width action-block__image"
+                      >
                         <tr>
-                          <td>
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/first-picture.jpg" width="284" height="284" border="0" alt="пригласительная картинка курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                          <td align="center">
+                            <img class="action-block__image" src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/first-picture.jpg" width="284" height="271" border="0" alt="пригласительная картинка курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                           </td>
                         </tr>
                       </table>
@@ -282,7 +310,7 @@
                 <!-- padding -->
                 <table cellpadding="0" cellspacing="0" border="0"  width="100%">
                   <tr>
-                    <td style="padding-top: 16px;"></td>
+                    <td style="padding-top: 32px;" class="action-block__padding"></td>
                   </tr>
                 </table>
 
@@ -570,73 +598,89 @@
                 <!-- отзыв о курсе -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center" style="padding-top: 32px; padding-bottom: 24px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Отзыв о&nbsp;курсе</b></h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center">
-                      <!-- картинка - анна -->
-                      <!--[if mso]>
-                      <table style="width:600px;" cellpadding="0" cellspacing="0">
-                      <tr>
-                      <td valign="top" style="width:120px;">
-                      <![endif]-->
-                      <table cellspacing="0" cellpadding="0" border="0" width="120px"
-                             style="float:left;">
+                    <td style="padding-top: 32px; padding-right: 12px; padding-bottom: 48px; padding-left: 16px;"
+                        class="review"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
-                          <td align="center" style="padding-bottom: 8px;">
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/foto-anna.png" width="120" height="120" border="0" alt="фото участника курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                          <td align="center" style="padding-bottom: 24px;">
+                            <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Отзыв о&nbsp;курсе</b></h2>
                           </td>
                         </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom: 28px;">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Анна</p>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]>
-                      </td>
-                      <![endif]-->
-
-                      <!-- отзыв -->
-                      <!--[if mso]>
-                      <td valign="top" style="width:256px;">
-                      <![endif]-->
-                      <table cellspacing="0" cellpadding="0" border="0" width="256px"
-                             style="float: left">
-                        <tr>
-                          <td align="left" style="padding-bottom: 17px;">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #13D6C3;"><b>Очень понравился курс!</b></p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="left">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;">
-                              Так как я&nbsp;уже имела дело с&nbsp;HTML и&nbsp;CSS, то&nbsp;в&nbsp;принципе никаких трудностей у&nbsp;меня не&nbsp;возникло.
-                              Хотелось&nbsp;бы просто указать маленький (почти незаметный минус, который не&nbsp;влияет на&nbsp;восприятие
-                              материала): в&nbsp;практических заданиях, как мне показалось будет засчитано задание, если все указал
-                              в&nbsp;верном порядке (в&nbsp;случае свойств это сделать все&nbsp;же ну&nbsp;очень сложно).</p>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]>
-                      </td>
-                      </tr>
-                      </table>
-                      <![endif]-->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 24px; padding-bottom: 32px;">
-                      <table cellpadding="0" cellspacing="0" border="0" width="193px">
                         <tr>
                           <td align="center">
+                            <!-- картинка - анна -->
+                            <!--[if mso]>
+                            <table style="width:600px;" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td valign="top" style="width:120px;">
+                            <![endif]-->
+                            <table cellspacing="0" cellpadding="0" border="0" width="120px"
+                                   style="float:left;" class="mobile-content-full-width">
+                              <tr>
+                                <td align="center" style="padding-bottom: 8px;">
+                                  <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/foto-anna.png" width="120" height="120" border="0" alt="фото участника курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" style="padding-bottom: 28px;">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Анна</p>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            <![endif]-->
+
+                            <!-- распорка в десктоп -->
+                            <table cellspacing="0" cellpadding="0" border="0" width="24px"
+                                   style="float: left;"
+                                   class="mobile-content-hidden"
+                            >
+                              <tr><td>&nbsp</td></tr>
+                            </table>
+
+                            <!-- отзыв -->
+                            <!--[if mso]>
+                            <td valign="top" style="width:256px;">
+                            <![endif]-->
+                            <table cellspacing="0" cellpadding="0" border="0" width="392px"
+                                   style="float: left" class="mobile-content-full-width">
+                              <tr>
+                                <td align="left" style="padding-bottom: 17px;">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #13D6C3;"><b>Очень понравился курс!</b></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;">
+                                    Так как я&nbsp;уже имела дело с&nbsp;HTML и&nbsp;CSS, то&nbsp;в&nbsp;принципе никаких трудностей у&nbsp;меня не&nbsp;возникло.
+                                    Хотелось&nbsp;бы просто указать маленький (почти незаметный минус, который не&nbsp;влияет на&nbsp;восприятие
+                                    материала): в&nbsp;практических заданиях, как мне показалось будет засчитано задание, если все указал
+                                    в&nbsp;верном порядке (в&nbsp;случае свойств это сделать все&nbsp;же ну&nbsp;очень сложно).</p>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 40px;" class="review__button">
+                            <table cellpadding="0" cellspacing="0" border="0" width="193px">
+                              <tr>
+                                <td align="center">
                             <span style="border-style:solid; border-color:#FF4B33; background:#FF4B33; border-width:0px; display:inline-block; border-radius:5px; width:auto;">
                               <a href="https://#" target="_blank" style="mso-style-priority:100!important; text-decoration:none; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; mso-line-height-rule:exactly; display:inline-block; width:auto; font-family:'trebuchet ms', tahoma, sans-serif; font-size:18px; line-height:21px; font-weight:normal; font-style:normal; text-align:center; color:#FFFFFF; border-style:solid; border-color:#FF4B33; border-width:8px 16px; background:#FF4B33; border-radius:5px;">
                                 Записаться на&nbsp;курс
                               </a>
                             </span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
@@ -827,47 +871,55 @@
                 <!-- преимущества -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center" style="padding-top: 56px; padding-bottom: 40px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Преимущества обучения у&nbsp;нас</b></h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-bottom: 24px;">
-                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <td style="padding-top: 48px; padding-right: 16px; padding-bottom: 48px; padding-left: 16px;"
+                        class="advantage__wrapper"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
-                          <td align="left" style="padding-left: 16px; width: 40px;">
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-smile.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
-                          </td>
-                          <td align="left" style="width: 200px; padding-right: 16px;">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>Более 30&nbsp;курсов</b> Как для новичков, так и&nbsp;для практикующих разработчиков.</p>
+                          <td align="center" style="padding-bottom: 24px;" class="advantage__title">
+                            <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #141414;"><b>Преимущества обучения у&nbsp;нас</b></h2>
                           </td>
                         </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-bottom: 24px;">
-                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
                         <tr>
-                          <td align="left" style="padding-left: 16px; width: 40px;">
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-time.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
-                          </td>
-                          <td align="left" style="width: 200px; padding-right: 16px;">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>Только актуальные знания</b> Все преподаватели являются практикующими разработчиками, следят за&nbsp;трендами и&nbsp;постоянно обновляют программу курса.</p>
+                          <td align="center" style="padding-bottom: 24px;">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td align="left" style="width: 40px; padding-right: 16px;">
+                                  <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-smile.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                                </td>
+                                <td align="left">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>Более 30&nbsp;курсов</b> Как для новичков, так и&nbsp;для практикующих разработчиков.</p>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-bottom: 32px;">
-                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
                         <tr>
-                          <td align="left" style="padding-left: 16px; width: 40px;">
-                            <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-target.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                          <td align="center" style="padding-bottom: 24px;">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td align="left" style="width: 40px; padding-right: 16px;">
+                                  <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-time.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                                </td>
+                                <td align="left">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>Только актуальные знания</b> Все преподаватели являются практикующими разработчиками, следят за&nbsp;трендами и&nbsp;постоянно обновляют программу курса.</p>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
-                          <td align="left" style="width: 200px; padding-right: 16px;">
-                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>База лучших вакансий</b> Выпускники получают доступ к&nbsp;базе вакансий от&nbsp;ведущих работодателей.</p>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td align="left" style="width: 40px; padding-right: 16px;">
+                                  <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/3-promo/img/icon-target.png" width="40" height="40" border="0" alt="текстовый пункт" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
+                                </td>
+                                <td align="left">
+                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #000000;"><b>База лучших вакансий</b> Выпускники получают доступ к&nbsp;базе вакансий от&nbsp;ведущих работодателей.</p>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
