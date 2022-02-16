@@ -44,6 +44,10 @@
         width: 100%!important;
         max-width: 600px!important;
       }
+      .adaptive-img {
+        width: 100%!important;
+        height: auto!important;
+      }
       /*header*/
       .header-mobile__image {
         padding-top: 40px!important;
@@ -59,6 +63,25 @@
         width: 33%!important;
         text-align: center!important;
       }
+      /*синий блок { здравствуйте }*/
+      .blue-block__wrapper {
+        padding-top: 24px!important;
+        padding-left: 16px!important;
+        padding-bottom: 24px!important;
+        padding-right: 19px!important;
+      }
+      .blue-block__name {
+        padding-top: 0!important;
+      }
+      .blue-block__image {
+        padding-top: 24px!important;
+      }
+      /*Что вас ждет на курсе*/
+      .course-description__wrapper {
+        padding-top: 40px!important;
+        padding-right: 16px!important;
+        padding-left: 16px!important;
+      }
       /*ведущие курса*/
       .course-leaders__table-indent {
         padding-right: 16px!important;
@@ -66,6 +89,17 @@
       }
       .course-leaders__item-indent {
         padding-bottom: 32px!important;
+      }
+      /*Другие мероприятия*/
+      .events__title {
+        padding-bottom: 16px!important;
+      }
+      /*все мероприятия*/
+      .all-events__button {
+        padding-bottom: 9px!important;
+      }
+      .all-events__image {
+        padding-bottom: 16px!important;
       }
       /*footer*/
       .footer__wrapper {
@@ -209,16 +243,20 @@
                        class="mobile-content-full-width"
                 >
                   <tr>
-                    <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 19px;">
+                    <td align="center" style="padding-right: 32px; padding-left: 32px;"
+                        class="blue-block__wrapper"
+                    >
                       <!--[if mso]>
                       <table style="width:600px" cellpadding="0" cellspacing="0">
                       <tr>
                       <td valign="top" style="width:285px">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left; width: 285px;">
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left; width: 360px;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td align="left" style="padding-bottom: 26px;">
+                          <td align="left" style="padding-top: 32px; padding-bottom: 26px;" class="blue-block__name">
                             <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #13D6C3;"><b>Здравствуйте, {{name}}</b></p>
                           </td>
                         </tr>
@@ -238,9 +276,11 @@
                       <td valign="top" style="width: 175px">
                       <![endif]-->
                       <table cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: left; width: 175px;">
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; float: right; width: 175px;"
+                             class="mobile-content-full-width"
+                      >
                         <tr>
-                          <td>
+                          <td align="center" class="blue-block__image adaptive-img">
                             <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/2-welcome/img/first-picture.png" width="175" height="269" border="0" alt="Начальный html+css" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                           </td>
                         </tr>
@@ -265,33 +305,41 @@
           >
             <tr>
               <td align="center">
-
                 <!-- Что вас ждет на курсе -->
                 <table width="100%" cellspacing="0" cellpadding="0" border="0"
                        style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;">
                   <tr>
-                    <td align="center" style="padding-top: 40px; padding-bottom: 24px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 30px; line-height: 35px; color: #FF4B33;"><b>Что вас ждет на&nbsp;курсе</b></h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top: 21px; padding-right: 16px; padding-left: 16px;">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Вы&nbsp;будете изучать теорию и&nbsp;методику на&nbsp;примере учебного проекта, который разработали наши эксперты. А&nbsp;применить полученные знания на&nbsp;практике вы&nbsp;сможете, выполняя задания по&nbsp;личному проекту.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top: 21px; padding-right: 16px; padding-left: 16px;">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">В&nbsp;этом вам будет помогать наставник&nbsp;&mdash; опытный специалист, который проверит домашние задания и&nbsp;поделится секретами мастерства. А&nbsp;если у&nbsp;вас останутся вопросы, наставник сможет ответить на&nbsp;них на&nbsp;консультации.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top: 21px; padding-right: 16px; padding-left: 16px;">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">После завершения курса вам нужно будет подготовить свой проект к&nbsp;защите&nbsp;&mdash; убедиться, что он&nbsp;реализован в&nbsp;соответствии с&nbsp;техническим заданием.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top: 21px; padding-right: 16px; padding-bottom: 48px; padding-left: 16px;">
-                      <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Желаем вам продуктивной работы на&nbsp;интенсиве и&nbsp;успешной защиты. У&nbsp;вас всё получится, мы&nbsp;в&nbsp;вас верим!</p>
+                    <td align="center" style="padding-top: 48px; padding-right: 32px; padding-bottom: 48px; padding-left: 32px;"
+                        class="course-description__wrapper"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;">
+                        <tr>
+                          <td align="center" style="padding-bottom: 24px;">
+                            <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 30px; line-height: 35px; color: #FF4B33;"><b>Что вас ждет на&nbsp;курсе</b></h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Вы&nbsp;будете изучать теорию и&nbsp;методику на&nbsp;примере учебного проекта, который разработали наши эксперты. А&nbsp;применить полученные знания на&nbsp;практике вы&nbsp;сможете, выполняя задания по&nbsp;личному проекту.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="padding-top: 21px;">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">В&nbsp;этом вам будет помогать наставник&nbsp;&mdash; опытный специалист, который проверит домашние задания и&nbsp;поделится секретами мастерства. А&nbsp;если у&nbsp;вас останутся вопросы, наставник сможет ответить на&nbsp;них на&nbsp;консультации.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="padding-top: 21px;">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">После завершения курса вам нужно будет подготовить свой проект к&nbsp;защите&nbsp;&mdash; убедиться, что он&nbsp;реализован в&nbsp;соответствии с&nbsp;техническим заданием.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="padding-top: 21px;">
+                            <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Желаем вам продуктивной работы на&nbsp;интенсиве и&nbsp;успешной защиты. У&nbsp;вас всё получится, мы&nbsp;в&nbsp;вас верим!</p>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -402,89 +450,96 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0"
                        style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;">
                   <tr>
-                    <td align="center" style="padding-bottom: 16px;">
-                      <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 30px; line-height: 35px; color: #0B379B;"><b>Другие мероприятия</b></h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-right: 16px; padding-bottom: 16px; padding-left: 16px;">
-                      <!-- frontend -->
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
-                        <tr>
-                          <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
-                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                <td>
-                                  <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Тренды <span style="white-space: nowrap">frontend-разработки</span></b></h3>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>20&nbsp;июня, 17:00</b></p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Самые многообещающие направления развития фронтенда в&nbsp;2020 году</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-right: 16px; padding-bottom: 16px; padding-left: 16px;">
-                      <!-- figma -->
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
-                        <tr>
-                          <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
-                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                <td>
-                                  <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Figma vs&nbsp;Photoshop</b></h3>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>21&nbsp;июня, 17:00</b></p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Почему давно пора отказаться от&nbsp;последнего?</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
                     <td align="center" style="padding-right: 16px; padding-bottom: 32px; padding-left: 16px;">
-                      <!-- git -->
                       <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
+                             style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;">
                         <tr>
-                          <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
-                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <td align="center" style="padding-bottom: 24px;" class="events__title">
+                            <h2 style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 30px; line-height: 35px; color: #0B379B;"><b>Другие мероприятия</b></h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-bottom: 16px;">
+                            <!-- frontend -->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                   style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
                               <tr>
-                                <td>
-                                  <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Что такое Git и&nbsp;как его использовать?</b></h3>
+                                <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                      <td>
+                                        <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Тренды <span style="white-space: nowrap">frontend-разработки</span></b></h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>20&nbsp;июня, 17:00</b></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Самые многообещающие направления развития фронтенда в&nbsp;2020 году</p>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-bottom: 16px;">
+                            <!-- figma -->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                   style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
                               <tr>
-                                <td>
-                                  <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>22&nbsp;июня, 17:00</b></p>
+                                <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                      <td>
+                                        <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Figma vs&nbsp;Photoshop</b></h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>21&nbsp;июня, 17:00</b></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Почему давно пора отказаться от&nbsp;последнего?</p>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <!-- git -->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                   style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; border: 1px solid #02BAD3; border-radius: 15px;">
                               <tr>
-                                <td>
-                                  <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Разберем тонкости использования самой популярной системы контроля версий.</p>
+                                <td align="center" style="padding-top: 24px; padding-right: 16px; padding-bottom: 24px; padding-left: 16px;">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                      <td>
+                                        <h3 style="Margin: 0; padding-bottom: 8px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 24px; line-height: 28px; color: #02BAD3;"><b>Что такое Git и&nbsp;как его использовать?</b></h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; padding-bottom: 18px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 16px; line-height: 19px; color: #141414;"><b>22&nbsp;июня, 17:00</b></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p style="Margin: 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; -mso-line-height-rule:exactly; font-family:'trebuchet ms', tahoma, sans-serif; font-size: 18px; line-height: 21px; color: #141414;">Разберем тонкости использования самой популярной системы контроля версий.</p>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                             </table>
@@ -499,7 +554,7 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0"
                        style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px;" >
                   <tr>
-                    <td align="center" style="padding-bottom: 9px;">
+                    <td align="center" style="padding-bottom: 16px;" class="all-events__button">
                       <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FF4B33" style="background-color: #FF4B33; border-radius: 5px;">
                         <tr>
                           <td align="center">
@@ -514,7 +569,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td align="center" style="padding-bottom: 16px;">
+                    <td align="center" style="padding-bottom: 8px;" class="all-events__image">
                       <img src="https://raw.githubusercontent.com/alexander-mokryak/576797-play-html-1/module2-task2/2-welcome/img/second-picture.jpg" width="273.4" height="290" border="0" alt="пригласительная картинка курса" style="display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;"/>
                     </td>
                   </tr>
